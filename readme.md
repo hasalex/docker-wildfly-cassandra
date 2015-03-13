@@ -13,13 +13,13 @@ First, the extension should be up uploaded to bintray.
 
 Then the image can be built.
 
-	docker build -t hasalex/wildfly .
+	docker build -t hasalex/wildfly-cassandra .
 
 Of course, you should update the Dockerfile with you own bintray URL.
 
 # Run
 
-    docker run -p 9990:9990 -d sewatech/java7
+    docker run -p 9990:9990 -d hasalex/wildfly-cassandra
 
 CORS is enabled in standalone-cassandra.xml. By default, the hosts _localhost_ and _docker_ are allowed. Of course you can (should) customize it.
 
