@@ -21,3 +21,5 @@ Of course, you should update the Dockerfile with you own bintray URL.
 
     docker run -p 9990:9990 -d sewatech/java7
 
+CORS is enabled in standalone-cassandra.xml. By default, the hosts _localhost_ and _docker_ are allowed. Of course you can (should) customize it.
+
