@@ -42,7 +42,7 @@
             </logger>
         </audit-log>
         <management-interfaces>
-            <http-interface security-realm="ManagementRealm" http-upgrade-enabled="true" allowed-origins="localhost docker">
+            <http-interface security-realm="ManagementRealm" http-upgrade-enabled="true" allowed-origins="http://localhost http://docker">
                 <socket-binding http="management-http"/>
             </http-interface>
         </management-interfaces>
