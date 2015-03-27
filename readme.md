@@ -2,7 +2,7 @@
 
 * Debian Jessie
 * Oracle Java 8 - JRE + tools.jar
-* [WildFly Core 9.0.0.Beta1-SNAPSHOT](https://github.com/wildfly/wildfly-core)
+* [WildFly Core 1.0.0.Beta1-SNAPSHOT](https://github.com/wildfly/wildfly-core)
 * [WildFly Cassandra Extension](https://github.com/hawkular/wildfly-cassandra/)
 
 # Build
