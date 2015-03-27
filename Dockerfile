@@ -1,4 +1,4 @@
-FROM hasalex/wildfly-core
+FROM hasalex/wildfly-core:1.0.0.Beta2
 MAINTAINER Alexis Hassler <alexis@sewatech.org>
 
 RUN curl -Ls https://bintray.com/artifact/download/hasalex/generic/wildfly-cassandra-module.zip -o wildfly-cassandra-module.zip && \
