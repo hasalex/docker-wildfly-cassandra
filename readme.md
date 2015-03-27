@@ -2,8 +2,8 @@
 
 * Debian Jessie
 * Oracle Java 8 - JRE + tools.jar
-* [WildFly Core 9.0.0.Beta1-SNAPSHOT](https://github.com/wildfly/wildfly-core)
-* [WildFly Cassandra Extension](https://github.com/hawkular/wildfly-cassandra/)
+* [WildFly Core 1.0.0.Beta2](https://github.com/wildfly/wildfly-core)
+* [WildFly Cassandra Extension](https://github.com/wildfly-extras/wildfly-cassandra/)
 
 # Build
 
@@ -21,5 +21,4 @@ Of course, you should update the Dockerfile with you own bintray URL.
 
     docker run -p 9990:9990 -d hasalex/wildfly-cassandra
 
-CORS is enabled in standalone-cassandra.xml. By default, the hosts _localhost_ and _docker_ are allowed. Of course you can (should) customize it.
-
+CORS is enabled in standalone-cassandra.xml. By default, the hosts _http://localhost_ and _http://docker_ are allowed. Of course you can (should) customize it.
