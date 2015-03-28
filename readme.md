@@ -2,7 +2,7 @@
 
 * Debian Jessie
 * Oracle Java 8 - JRE + tools.jar
-* [WildFly Core 1.0.0.Beta3](https://github.com/wildfly/wildfly-core)
+* [WildFly Core 1.0.0.BetaN-SNAPSHOT](https://github.com/wildfly/wildfly-core)
 * [WildFly Cassandra Extension](https://github.com/wildfly-extras/wildfly-cassandra/)
 
 # Build
@@ -16,6 +16,9 @@ Then the image can be built.
 	docker build -t hasalex/wildfly-cassandra .
 
 Of course, you should update the Dockerfile with you own bintray URL.
+
+For released versions, I'm using the dist in JBoss' NExus repository :
+
 
 # Run
 
