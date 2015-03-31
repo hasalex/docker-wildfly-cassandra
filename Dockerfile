@@ -6,7 +6,9 @@ WORKDIR /wildfly-core
 RUN curl -Ls https://bintray.com/artifact/download/hasalex/generic/wildfly-cassandra-module.zip -o wildfly-cassandra-module.zip && \
     unzip wildfly-cassandra-module.zip && rm wildfly-cassandra-module.zip
 
-EXPOSE 9990
+ADD standalone-cassandra.sh bin/
 
-ENTRYPOINT ["bin/standalone.sh"]
-CMD ["-c", "standalone-cassandra.xml", "-bmanagement", "0.0.0.0"]
+EXPOSE 9990 9042 9160
+
+ENTRYPOINT ["bin/standalone-cassandra.sh"]
+CMD []
