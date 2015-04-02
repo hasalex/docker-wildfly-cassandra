@@ -3,7 +3,7 @@ MAINTAINER Alexis Hassler <alexis@sewatech.org>
 
 WORKDIR /wildfly-core
 
-RUN curl -Ls https://bintray.com/artifact/download/hasalex/generic/wildfly-cassandra-module.zip -o wildfly-cassandra-module.zip && \
+RUN curl -Ls "https://dl.bintray.com/wfdemo/wildfly/wildfly-cassandra-module.zip" -o wildfly-cassandra-module.zip && \
     unzip wildfly-cassandra-module.zip && rm wildfly-cassandra-module.zip
 
 ADD standalone-cassandra.sh bin/
