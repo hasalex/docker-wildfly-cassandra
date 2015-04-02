@@ -1,4 +1,4 @@
-FROM hasalex/wildfly-core
+FROM wfdemo/wildfly-core
 MAINTAINER Alexis Hassler <alexis@sewatech.org>
 
 WORKDIR /wildfly-core
