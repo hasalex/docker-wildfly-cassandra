@@ -1,8 +1,6 @@
 FROM wfdemo/wildfly-core
 MAINTAINER Alexis Hassler <alexis@sewatech.org>
 
-WORKDIR /wildfly-core
-
 RUN curl -Ls "https://dl.bintray.com/wfdemo/wildfly/wildfly-cassandra-module.zip" -o wildfly-cassandra-module.zip && \
     unzip wildfly-cassandra-module.zip && rm wildfly-cassandra-module.zip
 
@@ -10,5 +8,5 @@ ADD standalone-cassandra.sh bin/
 
 EXPOSE 9990 9042 9160
 
-ENTRYPOINT ["bin/standalone-cassandra.sh"]
-CMD []
+ENTRYPOINT []
+CMD ["bin/standalone-cassandra.sh"]
